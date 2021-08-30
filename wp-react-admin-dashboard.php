@@ -35,8 +35,11 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WP_REACT_ADMIN_DASHBOARD_VERSION', '1.0.0' );
-
+define( 'WP_REACT_ADMIN_DASHBOARD_VERSION', '1.0.0'  );
+define( 'WP_REACT_ADMIN_DASHBOARD_DIR', plugin_dir_path( __FILE__ ) );
+define( 'WP_REACT_ADMIN_DASHBOARD_URL', plugins_url( '/', __FILE__ ) );
+define( 'WP_REACT_ADMIN_DASHBOARD_STORE_URL', 'https://waashero.com' );
+define( 'WP_REACT_ADMIN_DASHBOARD_FILE', __FILE__ );
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-wp-react-admin-dashboard-activator.php
